@@ -1,0 +1,125 @@
+
+.message-form {
+  background-position: center;
+  color: red;
+  text-align: center;
+  margin-top: 10%;
+  border-color: border-color;
+  border-radius: border-radius;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.5;
+
+}
+ .alert {
+   box-shadow: none;
+ }
+.message-form.message{
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 90%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.get-touch {
+    font-weight: 500;
+    font-family: "Julius Sans One",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3d3d3d;
+}
+
+
+.social {
+  background-image: url("orange_background_with_bubbles-wallpaper-2560x1440.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+
+
+  &:before {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.social-icons {
+  justify-content: space-between;
+}
+
+.social-link {
+  text-align: center;
+  color: #ffffff;
+  padding: 25px 0;
+
+  .fa {
+    font-size: 38px;
+    margin-bottom: 18px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: action-color;
+  }
+}
+
+.social-name {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+}
+
+
+.contacts-row {
+   desktop-layout {
+    flex-direction: row-reverse;
+  }
+}
+
+.contact-form {
+  margin-bottom: 48px;
+
+   desktop-layout {
+    margin-bottom: 0;
+  }
+
+  .form-control {
+    border-color: border-color;
+    border-radius: border-radius;
+    font-size: 14px;
+    color: red;
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .contact-message {
+    height: 156px;
+  }
+}
+
+.btn-contact {
+  width: 100%;
+}
+.contacts-container {
+  padding-bottom: 5%;
+}
+.col-md-4 {
+  padding-top: 9%;
+  text-align: center
+}
+.paragraph a {
+  color: gray;
+  text-decoration: none;
+}
+.btn{
+  display: grid;
+  width: 100%;
+}
+.btn-toolbar>.btn {
+    margin-left: 5px;
+    margin-bottom: 11px;
+}

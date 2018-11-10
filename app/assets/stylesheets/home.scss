@@ -1,0 +1,25 @@
+.index {
+    margin-bottom: 2%;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 0;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.carousel-inner>.item>img{
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-inner>.item {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
