@@ -1,6 +1,4 @@
-class CostumersController < ApiController
-
-
+class CostumersController < ApplicationController
   # GET /costumers
   # GET /costumers.json
   def index
@@ -22,7 +20,6 @@ class CostumersController < ApiController
     @costumer_new.save
     @costumer = ContactForm.new(costumer_params)
     @costumer.deliver
-
   end
 
   # PATCH/PUT /costumers/1
@@ -41,12 +38,7 @@ class CostumersController < ApiController
     @costumer.destroy
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_costumer
-      @costumer = Costumer.find(params[:id])
-    end
-
+  protected
     # Never trust parameters from the scary internet, only allow the white list through.
     def costumer_params
       params.require(:costumer).permit(:name, :email, :message)
