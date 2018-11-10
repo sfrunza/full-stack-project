@@ -1,0 +1,106 @@
+.navbar-default .navbar-nav>li>a {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: red;
+  background-color: transparent;
+  border-color: 1px blue;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar-default {
+   border-color: transparent;
+   background-color: transparent;
+}
+
+.navbar,
+.navbar-default {
+  background-image: none !important;
+  background-color: transparent;
+  margin-bottom: 0%;
+  padding: 4px;
+}
+
+.info-p {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  border-bottom-style: groove;
+  border-width: 1.1px;
+  padding-right: 1%;
+  text-align: right;
+  padding-top: 0.5%;
+  vertical-align: middle;
+}
+
+.navbar-brand>img {
+  display: block;
+  height: 6em;
+}
+
+.navbar-right {
+  float: right!important;
+  margin-right: -15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fas.fa-phone {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.fas.fa-phone a:hover{
+  color: pink;
+  text-decoration: none;
+}
+.full-nav.info-p{
+  padding-left: 10%;
+}
+.info-p a {
+ margin-right: 10px;
+ color: #777;
+ text-decoration: none;
+}
+.follow-us {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #777;
+  margin-bottom: 0px;
+}
+.fas.fa-home{
+  padding-right: 8px;
+}
+.far.fa-images{
+  padding-right: 8px;
+}
+.fas.fa-dollar-sign{
+  padding-right: 8px;
+}
+.far.fa-address-book{
+  padding-right: 8px;
+}
+.follow-us a {
+  margin-top: 10px;
+}
+.fab.fa-instagram{
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.fab.fa-facebook-square{
+  vertical-align: middle;
+}
+.fa-instagram:hover {
+    color: #c13584;
+}
+.fab.fa-facebook-square:hover{
+  color: #3B5998;
+}
