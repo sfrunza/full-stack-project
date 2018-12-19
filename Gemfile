@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem "active_model_serializers"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'carrierwave', '~> 1.0'
 
 group :development, :test do
 

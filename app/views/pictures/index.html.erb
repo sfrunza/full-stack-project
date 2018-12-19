@@ -1,0 +1,26 @@
+<h1 class="topbar">All Pictures</h1>
+<%= link_to "Add New Picture",  new_picture_path, class: "success button" %>
+
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Name </th>
+          <th scope="col">Description</th>
+          <th scope="col">Picture</th>
+          <th scope="col">Delete Picture</th>
+        </tr>
+      </thead>
+      <% @pictures.order(id: :desc).each do |picture| %>
+        <tbody>
+          <tr>
+            <td><%= picture.id %></td>
+            <td><%= picture.image_name %></td>
+            <td><%= picture.image_description%></td>
+            <td><%= link_to image_tag(picture.photo), picture_path(picture), :class => "img_preview"%></td>
+            <td><%= link_to 'Delete', picture_path(picture), method: :delete %></td>
+          <tr>
+        </tbody>
+          <% end %>
+    </table>
