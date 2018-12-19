@@ -9,7 +9,6 @@ import Photo from './Photo'
 import Prices from './Prices'
 import BreadCrumbs from '../components/BreadCrumbs'
 
-
 const App = props => {
 
   return(

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button, Carousel, Image } from 'react-bootstrap'
+import { Col, Row, Grid, Image } from 'react-bootstrap'
 
 class Home extends Component {
   constructor(props) {
@@ -12,31 +12,22 @@ class Home extends Component {
   render() {
 
     return (
-      <div className="index" style={{ width: '100%' }} >
-        <Carousel>
-          <Carousel.Item>
-            <Image width={900}   src="https://images.unsplash.com/photo-1528643445466-1f204fbd8f88?ixlib=rb-0.3.5&s=9f2cb9f361be900e06eaf7b7db613f74&auto=format&fit=crop&w=2100&q=80" />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Image width={900}  src="https://images.unsplash.com/photo-1508873760731-9c3d0bb6b961?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4492a93e67cf18b7ccd3aeb5bdb3346f&auto=format&fit=crop&w=2100&q=80" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Image width={900}  src="https://images.unsplash.com/photo-1521380119896-a63bbcf9b954?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd54976933769ac21d47bb17672677e5&auto=format&fit=crop&w=2100&q=80" />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>;
-      </div>
+      <Grid className="index">
+        <div className="strc1">
+            <Image src="https://i.ytimg.com/vi/Xh_Neg-Hp84/maxresdefault.jpg"/>
+        </div>
+        <Row className="show-grid">
+          <Col xs={12} md={8} className="intro-text">
+            <div className="intro">
+            <h1 className="text-intro">MY <span className="cakes">CAKES</span> ARE HANDCRAFTED WITH LOVE.</h1>
+            <p className="paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+          </Col>
+          <Col xs={6} md={4} className="intro-pic">
+            <Image src="https://www.cheesecake.com.au/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/w/e/web_mobile_750x814_scr_caramel.png" responsive />
+          </Col>
+        </Row>
+      </Grid>
     )
   }
 }

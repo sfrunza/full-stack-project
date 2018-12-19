@@ -1,0 +1,25 @@
+
+<div id="picture-form">
+  <%= form_for @picture, html: {class: "new-picture-form"} do |f| %>
+
+    <div id="name-field">
+      <%= f.label :image_name, "Name" %>
+      <%= f.text_field :image_name %>
+    </div>
+
+
+    <div id="description-field">
+      <%= f.label :image_description, "Description"  %>
+      <%= f.text_area :image_description  %>
+    </div>
+
+    <div id="banner-field">
+      <%= f.file_field :photo %>
+      <%= f.hidden_field :photo_cache %>
+    </div>
+
+    <div id="new-city-button">
+      <%= f.submit 'Submit', class: "success button"  %>
+    </div>
+  <% end %>
+</div>

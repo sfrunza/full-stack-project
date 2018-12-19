@@ -1,125 +1,80 @@
 
 .message-form {
-  background-position: center;
-  color: red;
+  background-color: white;
+  padding: 13% 19%;
+}
+
+.contact-header {
   text-align: center;
-  margin-top: 10%;
-  border-color: border-color;
-  border-radius: border-radius;
-  font-size: 14px;
-  padding: 10px;
-  line-height: 1.5;
-
-}
- .alert {
-   box-shadow: none;
- }
-.message-form.message{
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 90%;
-}
-
-input[type="submit"] {
-    width: 100%;
-    margin-top: 2%;
-}
-
-.get-touch {
-    font-weight: 500;
-    font-family: "Julius Sans One",sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: #3d3d3d;
-}
-
-
-.social {
-  background-image: url("orange_background_with_bubbles-wallpaper-2560x1440.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-
-
-  &:before {
-    background: rgba(0, 0, 0, 0.3);
-  }
-}
-
-.social-icons {
-  justify-content: space-between;
-}
-
-.social-link {
-  text-align: center;
-  color: #ffffff;
-  padding: 25px 0;
-
-  .fa {
-    font-size: 38px;
-    margin-bottom: 18px;
-  }
-
-  &:hover {
-    text-decoration: none;
-    color: action-color;
-  }
-}
-
-.social-name {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-size: 16px;
-}
-
-
-.contacts-row {
-   desktop-layout {
-    flex-direction: row-reverse;
-  }
-}
-
-.contact-form {
-  margin-bottom: 48px;
-
-   desktop-layout {
-    margin-bottom: 0;
-  }
-
-  .form-control {
-    border-color: border-color;
-    border-radius: border-radius;
-    font-size: 14px;
-    color: red;
-    padding: 10px;
-    line-height: 1.5;
-  }
-
-  .contact-message {
-    height: 156px;
-  }
-}
-
-.btn-contact {
-  width: 100%;
+  padding-top: 10%;
 }
 .contacts-container {
-  padding-bottom: 5%;
+  background-color: #F7EBED;
+  margin-bottom: 5%;
+  padding-bottom: 10%;
+  width: 90%;
+  margin-left: 5%;
 }
-.col-md-4 {
-  padding-top: 9%;
-  text-align: center
+.message-form input[type="text"] {
+  background: transparent;
+   border: none;
+   border-bottom: 1px solid #000000;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border-radius: 0;
 }
-.paragraph a {
-  color: gray;
+.message-form textarea {
+  background: transparent;
+   border: none;
+   border-bottom: 1px solid #000000;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border-radius: 0;
+}
+
+.message-form input[type="text"]:focus {
+  background: white;
+  border-color: #D2B3B8;
+}
+.message-form textarea:focus {
+  background: white;
+  border-color: #D2B3B8;
+}
+::-webkit-input-placeholder {
+    color: red;
+}
+
+.btn-toolbar {
+    text-align: center;
+
+}
+.btn-toolbar a {
+  margin: 0 17px;
+  color: #282325;
+}
+
+.btn-toolbar a:hover{
   text-decoration: none;
+  color: black;
 }
-.btn{
-  display: grid;
-  width: 100%;
+.error-message div{
+  text-align: center;
+  color: #DF202A;
+  margin-bottom: 0;
 }
-.btn-toolbar>.btn {
-    margin-left: 5px;
-    margin-bottom: 11px;
+.success-message div{
+  text-align: center;
+  color: #68B04D;
+  margin-bottom: 0;
+}
+.contact-paragraph{
+  text-align: center;
+  margin: 1% 31%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.contact-paragraph-delivery{
+  text-align: center;
+  margin: -1% 31%;
+  margin-bottom: 4%;
 }
