@@ -1,4 +1,9 @@
 import React from 'react'
+import {
+  Grid,
+  Header,
+  Message
+} from 'semantic-ui-react'
 
 // Cache gallery container
 const galleryContainer = document.querySelector('.react-gallery');
@@ -78,22 +83,28 @@ class Photo extends React.Component{
 
   render() {
     return(
-      <div refs='gallery-container' className='container-fluid gallery-container'>
-      <h1 className="contact-header">MY CAKE COLLECTION</h1>
-        <div className='gallery-row'>
-          {
-            this.state.pictures.map((url, index) => {
-               return <div className='col-sm-6 col-md-3 col-xl-2' key={url.id}>
-                  <div className='gallery-card'>
-                    <GalleryImage className='gallery-thumbnail' src={url.photo.url} alt={'Image number ' + (index + 1)} />
-                    <span className='card-icon-open fa fa-expand' value={url.photo.url} onClick={(e) => this.openModal(url.photo.url, e)}></span>
-                  </div>
-                </div>
-             })
-           }
-        </div>
-        <GalleryModal isOpen={this.state.showModal} onClick={this.closeModal} src={this.state.url} />
-      </div>
+      <Grid container style={{ padding: '5em 0em' }}>
+        <Grid.Row>
+          <Grid.Column>
+            <Message>
+              <Header as='h1'>MY CAKE COLLECTION</Header>
+              {
+                this.state.pictures.map((url, index) => {
+                   return <div className='col-sm-6 col-md-3 col-xl-2' key={url.id}>
+                      <div className='gallery-card'>
+                        <GalleryImage className='gallery-thumbnail' src={url.photo.url} alt={'Image number ' + (index + 1)} />
+                        <span className='card-icon-open fa fa-expand' value={url.photo.url} onClick={(e) => this.openModal(url.photo.url, e)}></span>
+                      </div>
+                    </div>
+                 })
+               }
+               <div>
+               <GalleryModal isOpen={this.state.showModal} onClick={this.closeModal} src={this.state.url} />
+             </div>
+            </Message>
+          </Grid.Column>
+        </Grid.Row>
+       </Grid>
     )
   }
 }

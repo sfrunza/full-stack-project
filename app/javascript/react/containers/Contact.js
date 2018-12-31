@@ -1,7 +1,11 @@
 import React from 'react';
-import { Jumbotron, Button, Col, Row} from 'react-bootstrap'
 import { Link } from "react-router-dom"
 import EmailForm from './EmailForm'
+import {
+  Grid,
+  Header,
+  Message
+} from 'semantic-ui-react'
 
 class Contact extends React.Component {
   constructor(props){
@@ -47,13 +51,24 @@ class Contact extends React.Component {
     let addNewMessage = (formPayload) => this.addNewMessage(formPayload)
 
      return(
-       <div className="contacts-container">
-        <h1 className="contact-header">CONTACT ME</h1>
-        <p className="contact-paragraph">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-        <p className="contact-paragraph">123-456-7890    |    INFO@MYSITE.COM </p>
-        <p className="contact-paragraph-delivery">Delivery in Greater Boston area is free. </p>
-                 <EmailForm addNewMessage={addNewMessage}/>
-      </div>
+       <Grid container style={{ padding: '5em 0em' }}>
+         <Grid.Row>
+           <Grid.Column>
+             <Message>
+               <Header as='h1'>CONTACT ME</Header>
+               <p className="contact-paragraph">
+                 This is a template for a simple marketing or informational website. It includes a large
+                 callout called a jumbotron and three supporting pieces of content. Use it as a starting
+                 point to create something more unique.
+               </p>
+               <p className="contact-paragraph">{this.state.number}    |    INFO@MYSITE.COM </p>
+               <p className="contact-paragraph-delivery">Delivery in Greater Boston area is free. </p>
+               <EmailForm addNewMessage={addNewMessage}/>
+             </Message>
+           </Grid.Column>
+         </Grid.Row>
+        </Grid>
+
      )
   }
 }

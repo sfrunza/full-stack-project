@@ -7,3 +7,11 @@
 .divdiv {
   text-align: center;
 }
+.topbar {
+  text-align: center;
+}
+.button.secondary {
+  position: absolute;
+  top: 55px;
+  right: 0;
+}

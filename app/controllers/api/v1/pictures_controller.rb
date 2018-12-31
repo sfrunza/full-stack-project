@@ -1,5 +1,6 @@
 class Api::V1::PicturesController < ApplicationController
   protect_from_forgery with: :null_session
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
   def index
     render json: Picture.all

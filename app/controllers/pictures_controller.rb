@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :index, :edit, :update, :destroy]
     # GET /pictures
     # GET /pictures.json
     def index
@@ -7,7 +8,12 @@ class PicturesController < ApplicationController
     end
 
     def new
+      if user_signed_in?
         @picture = Picture.new
+      else
+        flash[:notice] = "You need to be signed in "
+        redirect_to new_user_session_path
+      end
     end
 
     # GET /pictures/1
@@ -54,4 +60,6 @@ class PicturesController < ApplicationController
       def picture_params
         params.require(:picture).permit(:image_name, :photo, :image_description, :id)
       end
+
+      
 end

@@ -1,7 +1,6 @@
+<% if user_signed_in? %>
 <h1 class="topbar">All Pictures</h1>
-<%= link_to "Add New Picture",  new_picture_path, class: "success button" %>
-
-
+<%= link_to "Add New Picture",  new_picture_path, class: "primary button" %>
     <table class="table">
       <thead>
         <tr>
@@ -19,8 +18,10 @@
             <td><%= picture.image_name %></td>
             <td><%= picture.image_description%></td>
             <td><%= link_to image_tag(picture.photo), picture_path(picture), :class => "img_preview"%></td>
-            <td><%= link_to 'Delete', picture_path(picture), method: :delete %></td>
+            <td><%= link_to 'Delete', picture_path(picture), method: :delete, class: "alert button" %></td>
           <tr>
         </tbody>
           <% end %>
     </table>
+    <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "secondary button") %>
+<% end %>
