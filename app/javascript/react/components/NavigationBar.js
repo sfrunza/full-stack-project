@@ -31,7 +31,7 @@ class NavigationBar extends Component {
               <Nav pullRight >
                 <NavLink eventKey={1} componentClass={Link} href="/home" to="/home">Home</NavLink>
                 <NavLink eventKey={2} componentClass={Link} href="/photo" to="/photo">Photo</NavLink>
-                <NavLink eventKey={3} componentClass={Link} href="/pricing" to="/pricing">Pricing</NavLink>
+                <NavLink eventKey={3} componentClass={Link} href="/pricing" to="/pricing">About</NavLink>
                 <NavLink eventKey={4} componentClass={Link} href="/contact" to="/contact">Contact</NavLink>
               </Nav>
             </Navbar.Collapse>

@@ -120,7 +120,7 @@ class EmailForm extends Component {
     }
 
     return (
-      <Row >
+      <Row className="the-form">
         <form className="message-form" onSubmit={this.handleFormSubmit} >
           <Row >
            <Col md={6} >

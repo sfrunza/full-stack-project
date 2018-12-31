@@ -1,12 +1,13 @@
 import React from 'react';
+import { Input, TextArea } from 'semantic-ui-react'
 
 const TextField = props => {
 
-  let style ={paddingBottom: 10 + 'em'}
+  let style ={paddingBottom: 5 + 'em'}
   if (props.name == "message") {
     return (
       <label>{props.label}
-        <textarea
+        <TextArea autoHeight
           className={props.name}
           name={props.name}
           type='text'
@@ -20,7 +21,7 @@ const TextField = props => {
   }
   else return (
         <label>{props.label}
-          <input
+          <Input
             className={props.name}
             name={props.name}
             type='text'
