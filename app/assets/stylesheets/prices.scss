@@ -6,6 +6,11 @@
 
 .ui.message p.chef {
   margin-bottom: 5%;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: 0.9;
 }
 .about-header{
   margin-bottom: 0px !important;
@@ -16,6 +21,11 @@
   margin-bottom: 5% !important;
   display: inline-block;
   margin-left: 10% !important;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.9;
 }
 .ui.segment {
     position: relative;
@@ -26,4 +36,9 @@
     padding: 2em 2em;
     border-radius: 0;
     border: none;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.9;
 }

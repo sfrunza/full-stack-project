@@ -12,8 +12,8 @@ class Contact extends React.Component {
     super(props)
     this.state = {
       costumers: [],
-      number: "+1 613-242-0725",
-      email: "contact@gmail.com"
+      number: "+1 857-229-3205",
+      email: "INFO@SAMSONOVACAKES.COM"
 
     }
 
@@ -60,8 +60,8 @@ class Contact extends React.Component {
                  callout called a jumbotron and three supporting pieces of content. Use it as a starting
                  point to create something more unique.
                </p>
-               <p className="contact-paragraph">{this.state.number}    |    INFO@MYSITE.COM </p>
-               <p className="contact-paragraph-delivery">Delivery in Greater Boston area is free. </p>
+               <p className="contact-paragraph"><a href={`tel:${this.state.number}`}>{this.state.number}</a>   |    <a href={`mailto:${this.state.email}`}>{this.state.email}</a> </p>
+               <p className="contact-paragraph-delivery">Free Delivery in Greater Boston area! </p>
                <EmailForm addNewMessage={addNewMessage}/>
              </Message>
            </Grid.Column>

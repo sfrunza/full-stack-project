@@ -33,6 +33,12 @@ body {
   text-align: center;
   margin-right: 17px;
 }
+.intro h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  font-weight: 500;
+}
+
 
 .show-grid {
   margin-top: 3%;
@@ -67,7 +73,12 @@ body {
   top: 40%;
   left: 50%;
   margin-right: 5%;
-  transform: translate(-50%, 60%)
+  transform: translate(-50%, 60%);
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: 0.9;
 }
 .cakes {
   color: #D2B3B8;
