@@ -13,7 +13,6 @@ class Contact extends React.Component {
     this.state = {
       costumers: [],
       number: "+1 613-242-0725",
-      secondNumber: "+1 617-877-1450",
       email: "contact@gmail.com"
 
     }

@@ -1,6 +1,6 @@
 class Api::V1::CostumersController < ApplicationController
   protect_from_forgery with: :null_session
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy, :index]
 
   def index
     render json: Costumer.all
