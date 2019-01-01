@@ -18,8 +18,8 @@ class CostumersController < ApplicationController
   def create
     @costumer_new = Costumer.new(costumer_params)
     @costumer_new.save
-    @costumer = ContactForm.new(costumer_params)
-    @costumer.deliver
+    # @costumer = ContactForm.new(costumer_params)
+    # @costumer.deliver
   end
 
   # PATCH/PUT /costumers/1
