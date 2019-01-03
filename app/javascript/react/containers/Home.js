@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Col, Row, Grid, Image } from 'react-bootstrap'
+import { Col, Row, Image } from 'react-bootstrap'
+import {
+  Grid,
+  Header,
+  Message,
+  Segment,
+} from 'semantic-ui-react'
 
 class Home extends Component {
   constructor(props) {
@@ -14,19 +20,27 @@ class Home extends Component {
     return (
       <Grid className="index">
         <div className="strc1">
-            <Image src="https://i.ytimg.com/vi/Xh_Neg-Hp84/maxresdefault.jpg"/>
+            <Image src="/cake.jpg"/>
         </div>
-        <Row className="show-grid">
-          <Col xs={12} md={8} className="intro-text">
-            <div className="intro">
-            <h1 className="text-intro">MY <span className="cakes">CAKES</span> ARE HANDCRAFTED WITH LOVE.</h1>
-            <p className="paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-            </div>
-          </Col>
-          <Col xs={6} md={4} className="intro-pic">
-            <Image src="https://www.cheesecake.com.au/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/w/e/web_mobile_750x814_scr_caramel.png" responsive />
-          </Col>
-        </Row>
+        <Grid.Row className="row-index">
+          <Grid.Column className="column-2">
+            <Message className="message-home">
+              <Grid columns={2} stackable  className="container-home">
+                 <Grid.Column width={10} className="container-ten-wide">
+                 <Segment className="paragraph">
+                    <h1 className="text-intro">MY <span className="cakes">CAKES</span> ARE HANDCRAFTED WITH LOVE.</h1>
+                    <p>
+                      I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                 </Segment>
+                 </Grid.Column>
+                 <Grid.Column width={6}>
+                   <Image className="paragraph-image" src="/cake1.jpg" />
+                 </Grid.Column>
+              </Grid>
+            </Message>
+          </Grid.Column>
+        </Grid.Row>
       </Grid>
     )
   }
