@@ -84,10 +84,18 @@ class Photo extends React.Component{
   render() {
     return(
       <Grid container style={{ padding: '5em 0em' }}>
+      <div className="social-icons">
+        <a href="https://www.instagram.com/samsonova_cakes_boston/" target="_blank" >
+          <i className="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com" target="_blank" >
+          <i className="fa fa-facebook-official" aria-hidden="true"></i></a>
+      </div>
         <Grid.Row>
           <Grid.Column>
             <Message>
-              <Header as='h1'>MY CAKE COLLECTION</Header>
+
+              <Header as='h1' className="collection">MY CAKE COLLECTION</Header>
+
               {
                 this.state.pictures.map((url, index) => {
                    return <div className='col-sm-6 col-md-3 col-xl-2' key={url.id}>

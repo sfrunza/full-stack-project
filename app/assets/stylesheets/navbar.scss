@@ -37,7 +37,11 @@
 }
 
 .navbar-right> li > a > li > a{
-  color: #777;
+  color: black;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 200;
+  font-size: 15px;
+
 }
 .navbar-right> li > a > li.active > a{
   color: #D2B3B8;
