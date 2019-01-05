@@ -85,15 +85,15 @@ body {
 
 .modal-body {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   z-index: 11;
-  padding: 0;
+  padding: -1;
   overflow: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 35rem;
+  height: 35rem;
   border-radius: $radius;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
 }
 
 .modal-close {
@@ -129,13 +129,13 @@ h1:first-child{
     background: rgba(21, 21, 21, 0.75);
 }
 .social-icons a{
-  font-size: 30px;
+  font-size: 35px;
   color: black;
   padding: 0 5px;
 }
 .social-icons {
-  margin-top: 15px;
+  margin-top: 55px;
 }
-// h1.ui.header.collection{
-//   margin-top: 4% !important;
-// }
+.photo-container {
+  background-color: white !important;
+}

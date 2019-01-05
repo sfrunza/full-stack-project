@@ -83,7 +83,7 @@ class Photo extends React.Component{
 
   render() {
     return(
-      <Grid container style={{ padding: '5em 0em' }}>
+      <Grid container style={{ padding: '5em 0em' }} className="photo-container">
       <div className="social-icons">
         <a href="https://www.instagram.com/samsonova_cakes_boston/" target="_blank" >
           <i className="fa fa-instagram" aria-hidden="true"></i></a>

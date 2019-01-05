@@ -102,3 +102,46 @@ h1:first-child{
   margin-left: 10%;
 
 }
+.container-bottom {
+  background-color: white !important;
+  margin: 0 0 !important;
+}
+
+.ui.segment.container-image {
+  position: relative;
+  width: 100%;
+  max-width: 95%;
+  margin-right: 3% !important;
+  margin-top: 6% !important;
+  padding: 0 0 !important;
+}
+
+.container-image img {
+  width: 100%;
+  height: auto;
+}
+
+.container-image .bttn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  padding: 12px 24px;
+  border: solid 1px black;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+}
+
+.container-image .bttn:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.column-image {
+  width: 40% !important;
+}

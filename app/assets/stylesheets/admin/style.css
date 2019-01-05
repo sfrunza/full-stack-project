@@ -32,7 +32,7 @@ text-align: center;
 margin-bottom: 10px;
 }
 
-input {
+.login-field {
 text-align: center;
 background-color: #ECF0F1;
 border: 2px solid transparent;

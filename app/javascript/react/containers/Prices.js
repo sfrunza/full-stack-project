@@ -10,11 +10,11 @@ import { Link } from "react-router-dom"
 
 const Prices = (props) => {
  return(
-   <Grid container style={{ padding: '5em 0em' }}>
+   <Grid container style={{ padding: '5em 0em'}}className="about-container">
      <Grid.Row>
        <Grid.Column className="about-column">
          <Message>
-           <Header as='h1' className="about-header">ABOUT</Header>
+           <Header as='h1'>ABOUT</Header>
            <p className="chef">
              OKSANA SAMSONOVA, TOP PASTRY CHEF.
            </p>

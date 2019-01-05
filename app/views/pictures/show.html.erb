@@ -1,4 +1,5 @@
 <%= link_to 'Back', pictures_path, class: "info button" %>
+<%= link_to 'Edit', edit_picture_path(@picture), class: "warning button" %>
 <div class="divdiv">
   <%= image_tag @picture.photo, :class => "img_show"%>
 <h3><%= @picture.image_name %></h3>

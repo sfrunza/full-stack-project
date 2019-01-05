@@ -50,7 +50,7 @@ class Contact extends React.Component {
     let addNewMessage = (formPayload) => this.addNewMessage(formPayload)
 
      return(
-       <Grid container style={{ padding: '5em 0em' }}>
+       <Grid container style={{ padding: '5em 0em' }} className="contact-container">
          <Grid.Row>
            <Grid.Column>
              <Message>
