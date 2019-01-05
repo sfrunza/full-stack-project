@@ -4,7 +4,7 @@ import {
   Grid,
   Header,
   Message,
-  Segment,
+  Segment
 } from 'semantic-ui-react'
 
 class Home extends Component {
@@ -35,8 +35,24 @@ class Home extends Component {
                  </Segment>
                  </Grid.Column>
                  <Grid.Column width={6}>
-                   <Image className="paragraph-image" src="/cake1.jpg" />
+                   <Image className="paragraph-image" src="https://previews.dropbox.com/p/thumb/AAQOP2r_1TiMgRo5xJMOhO4e-WghWwN93L0z13LXh-_qiBxmEqNzL1sQBM0vgznkdKUDYd2gsGOxS_4kRIl3hcAAY07F5lKtrUoJ4PQ1rPXdmB71YJ2ZHNTZeWh_1uY64hYdtrWinasH4zIOwoFhyS3qz-V-PO0fZ7FFvhCXV43DkQW3mgNXSM_z8NJtDJFqXzEEElxdt0-uyLrsxyVCdJdZ5cbCF8a7CR-KxOuonhkWBqOvDZhZM60Hw-g7Gzj-J8M/p.jpeg?size=2048x1536&size_mode=3" />
                  </Grid.Column>
+              </Grid>
+              <Grid container columns={2} stackable className="container-bottom">
+                <Grid.Column className="column-image">
+                  <Segment className="container-image">
+                    <Image src='https://previews.dropbox.com/p/thumb/AAQTlsNp0zvg1_gF-3kEUZ4r0ELblktSRs8S7o7Kq1K_7oC0WH_PBELLFjaNNDHZxnTvAKgvaaRCh4Y0UfZkpXSW-HyGVmu_vxEwjWJPUQoxZHeKC8I2fS9swgTHvH15hjskpryWNsCqKhtNvZ6oortz_P8ZjohJMbIXXU25_Ums4Bd5MBBGG4f7rqxFklzGdiyFVevlZK3loIIZRNF6kHYK5guw3TquZdADP555-q94R6kRBlRQ3zFjs5cdFIxht1E/p.jpeg?size=2048x1536&size_mode=3'
+                    />
+                    <a className="bttn" href="/photo">Expleore Gallery</a>
+                  </Segment>
+                </Grid.Column>
+                <Grid.Column className="column-image">
+                  <Segment className="container-image">
+                    <Image src='https://previews.dropbox.com/p/thumb/AAR2ghPEVNZcaZmw10nk4OtpqyRLSNQI-kbfvP03YShFQSpDXXnrjC2U2PBLat0Mdu7LDXPf5wBwGG_EKshaA_85Wz--2Ie3AxIlszRHrcFxsjzDxAN0q6QLrk8VSpJCzWrWyg77sbVWqNqMkwOxaBa64yX2IrQS936oW8JBctHQJk3TSV4sdh1xrSU2Tb0WqZKU_2fE318Zr7SP4ZeKtMtoMq2a1Z0tJ2MiP7lLemHWiR9HTZtxXLR6mgmYjLe-j_g/p.jpeg?size=2048x1536&size_mode=3'
+                     />
+                     <a className="bttn" href="/pricing">Meet The Baker</a>
+                  </Segment>
+                </Grid.Column>
               </Grid>
             </Message>
           </Grid.Column>

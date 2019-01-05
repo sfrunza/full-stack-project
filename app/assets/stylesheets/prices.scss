@@ -11,9 +11,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   opacity: 0.9;
-}
-.about-header{
-  margin-bottom: 0px !important;
+  margin-top: -5%;
 }
 .about-info{
   width: 80%;
@@ -42,11 +40,16 @@
     letter-spacing: 1px;
     opacity: 0.9;
 }
-.about-column{
-  padding-top: 1rem !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
+
 .about-paragraph{
   height: 100%;
+}
+.ui.container.grid.about-container {
+  padding: 7.5em 0em;
+  background-color: #F7EBED;
+  margin-bottom: 5%;
+  padding-bottom: 10%;
+  width: 90% !important;
+  margin-left: 5% !important;
+  padding-top: 10%;
 }

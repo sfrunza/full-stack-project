@@ -31,14 +31,17 @@ class PicturesController < ApplicationController
       redirect_to pictures_path
     end
 
+    def edit
+      @picture = Picture.find(params[:id])
+    end
+
     # PATCH/PUT /pictures/1
     # PATCH/PUT /pictures/1.json
     def update
-      if @picture.update(picture_params)
-        render :show, status: :ok, location: @picture
-      else
-        render json: @picture.errors, status: :unprocessable_entity
-      end
+      @picture = Picture.find(params[:id])
+      permitted_columns = params.require(:picture).permit(:image_name, :image_description, :photo)
+      @picture.update_attributes(permitted_columns)
+      redirect_to pictures_path
     end
 
     # DELETE /pictures/1
@@ -61,5 +64,5 @@ class PicturesController < ApplicationController
         params.require(:picture).permit(:image_name, :photo, :image_description, :id)
       end
 
-      
+
 end
