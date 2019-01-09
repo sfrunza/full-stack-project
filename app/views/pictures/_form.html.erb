@@ -13,12 +13,12 @@
       <%= f.text_area :image_description  %>
     </div>
 
-    <div id="banner-field">
+    <div id="picture-field">
       <%= f.file_field :photo %>
       <%= f.hidden_field :photo_cache %>
     </div>
 
-    <div id="new-city-button">
+    <div id="new-picture-button">
       <%= f.submit 'Submit', class: "success button"  %>
     </div>
   <% end %>

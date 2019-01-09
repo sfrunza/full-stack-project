@@ -25,8 +25,8 @@ class PicturesController < ApplicationController
     # POST /pictures
     # POST /pictures.json
     def create
-      @picture_new = Picture.new(picture_params)
-      @picture_new.save
+      @picture = Picture.new(picture_params)
+      @picture.save
 
       redirect_to pictures_path
     end
