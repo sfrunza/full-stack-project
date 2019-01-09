@@ -13,8 +13,6 @@ class Api::V1::PicturesController < ApplicationController
   def create
     @picture = Picture.new(picture_params)
     @picture.save
-    # @costumer = ContactForm.new(picture_params)
-    # @costumer.deliver
   end
 
   def destroy
@@ -25,6 +23,6 @@ class Api::V1::PicturesController < ApplicationController
   protected
     # Never trust parameters from the scary internet, only allow the white list through.
     def picture_params
-      params.require(:picture).permit(:image_name, :photo, :image_description)
+      params.require(:picture).permit(:image_name, :photo, :image_description, :id)
     end
 end
