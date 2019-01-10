@@ -35,19 +35,19 @@ class Home extends Component {
                  </Segment>
                  </Grid.Column>
                  <Grid.Column width={6}>
-                   <Image className="paragraph-image" src="/cake1.jpg" />
+                   <Image className="paragraph-image" src="/cake1.JPG" />
                  </Grid.Column>
               </Grid>
               <Grid container columns={2} stackable className="container-bottom">
                 <Grid.Column className="column-image">
                   <Segment className="container-image">
-                    <Image src='gallery-pic.jpg' />
+                    <Image src='/gallery-pic.JPG' />
                     <a className="bttn" href="/photo">Expleore Gallery</a>
                   </Segment>
                 </Grid.Column>
                 <Grid.Column className="column-image">
                   <Segment className="container-image">
-                    <Image src='/about-pic.jpg' />
+                    <Image src='/about-pic.JPG' />
                      <a className="bttn" href="/pricing">Meet The Baker</a>
                   </Segment>
                 </Grid.Column>
