@@ -43,7 +43,7 @@ config.webpacker.check_yarn_integrity = true
    :user_name            => ENV['MAIL_USERNAME'],
    :password             => ENV['MAIL_PASSWORD'],
    :authentication       => "plain",
-  :enable_starttls_auto => true
+   :enable_starttls_auto => true
   }
 
 
