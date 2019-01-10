@@ -6,15 +6,15 @@ class Api::V1::CostumersController < ApplicationController
     render json: Costumer.all
   end
   def show
-    costumer = Costumer.find(params[:id])
-    render json: {costumer: name, costumer: email, costumer: message}
+    costumer_new = Costumer.find(params[:id])
+    render json: @costumer.to_json
   end
 
   def create
     @costumer_new = Costumer.new(costumer_params)
     @costumer_new.save
-    # @costumer = ContactForm.new(costumer_params)
-    # @costumer.deliver
+    @costumer = ContactForm.new(costumer_params)
+    @costumer.deliver
   end
 
   def destroy

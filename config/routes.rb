@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :costumers, only: [:index, :create]
+      resources :costumers, only: [:index, :new, :create]
       resources :pictures, only: [:index, :create, :destroy]
     end
   end

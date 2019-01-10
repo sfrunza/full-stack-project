@@ -31,6 +31,7 @@ gem "active_model_serializers"
 gem 'carrierwave', '~> 1.0'
 gem 'fog'
 gem 'fog-aws'
+gem 'mail_form'
 
 group :development, :test do
   gem "dotenv-rails"
