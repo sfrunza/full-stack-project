@@ -10,14 +10,13 @@ config.webpacker.check_yarn_integrity = false
   config.action_mailer.default_url_options = { :host => 'https://my-full-stack.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
 
-  ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'heroku.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
+  config.action_mailer.smtp_settings = {
+   :address              => "smtp.gmail.com",
+   :port                 => 587,
+   :user_name            => ENV['MAIL_USERNAME'],
+   :password             => ENV['MAIL_PASSWORD'],
+   :authentication       => "plain",
+   :enable_starttls_auto => true
   }
 
 

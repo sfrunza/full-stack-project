@@ -42,13 +42,13 @@ class Home extends Component {
                 <Grid.Column className="column-image">
                   <Segment className="container-image">
                     <Image src='/gallery-pic.JPG' />
-                    <a className="bttn" href="/photo">Expleore Gallery</a>
+                    <a className="bttn" href="/gallery">Expleore Gallery</a>
                   </Segment>
                 </Grid.Column>
                 <Grid.Column className="column-image">
                   <Segment className="container-image">
                     <Image src='/about-pic.JPG' />
-                     <a className="bttn" href="/pricing">Meet The Baker</a>
+                     <a className="bttn" href="/about">Meet The Baker</a>
                   </Segment>
                 </Grid.Column>
               </Grid>
