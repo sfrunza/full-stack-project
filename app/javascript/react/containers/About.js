@@ -8,7 +8,7 @@ import {
 } from 'semantic-ui-react'
 import { Link } from "react-router-dom"
 
-const Prices = (props) => {
+const About = (props) => {
  return(
    <Grid container style={{ padding: '5em 0em'}}className="about-container">
      <Grid.Row>
@@ -36,4 +36,4 @@ const Prices = (props) => {
  )
 }
 
-export default Prices;
+export default About;
