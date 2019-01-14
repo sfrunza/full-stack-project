@@ -25,9 +25,9 @@ class NavigationBar extends Component {
             <Navbar.Collapse>
               <Nav pullRight >
                 <NavItem><NavLink eventKey={1} componentClass={Link} href="/home" to="/home">Home</NavLink></NavItem>
-                <NavItem><NavLink eventKey={2} componentClass={Link} href="/photo" to="/photo">Gallery</NavLink></NavItem>
-                <NavItem><NavLink eventKey={3} componentClass={Link} href="/pricing" to="/pricing">About</NavLink></NavItem>
-                <NavItem><NavLink eventKey={4} componentClass={Link} href="/contact" to="/contact">Contact</NavLink></NavItem>
+                <NavItem><NavLink eventKey={2} componentClass={Link} href="/gallery" to="/gallery">Gallery</NavLink></NavItem>
+                <NavItem><NavLink eventKey={3} componentClass={Link} href="/about" to="/about">About</NavLink></NavItem>
+                <NavItem><NavLink eventKey={4} componentClass={Link} href="/contact-us" to="/contact-us">Contact</NavLink></NavItem>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
