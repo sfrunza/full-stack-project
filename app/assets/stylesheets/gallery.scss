@@ -1,0 +1,15 @@
+.gallery-container{
+  overflow: auto;
+  max-width: 72rem;
+  padding: 1% 4%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+}
+.ui.message.gallery-header {
+  padding: 0 0 !important;
+
+}
+.ui.message.gallery-header h1{
+  margin-bottom: 0 !important;
+}
