@@ -36,20 +36,22 @@ class GalleryPage extends React.Component{
   render() {
     let array = []
     let pictures = this.state.pictures.map(picture => {
-      array.push({"thumbnail": picture.photo.url, "src" : picture.photo.url})
+      array.push({"thumbnail": picture.photo.url, "src" : picture.photo.url, "caption" : picture.image_name})
 
     })
     return(
-      <Grid  container style={{ padding: '5em 0em' }} className="gallery-container">
+      <div className="gallery-container" >
+      <Grid container style={{ padding: '3em 0em' }}>
         <Grid.Row>
           <Grid.Column>
-            <Message>
+            <Message className="gallery-header">
               <Header as='h1'>MY CAKE COLLECTION</Header>
-              <Gallery images={array} enableImageSelection={false} />
             </Message>
           </Grid.Column>
         </Grid.Row>
        </Grid>
+        <Gallery images={array} enableImageSelection={false} lightboxWidth={1000}/>
+      </div>
 
     )
   }
