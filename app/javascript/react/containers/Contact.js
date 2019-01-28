@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-import EmailForm from './EmailForm'
+import EmailForm from '../components/EmailForm'
 import {
   Grid,
   Header,
