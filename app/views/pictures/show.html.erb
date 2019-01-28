@@ -1,11 +1,21 @@
+<div class="divdiv">
+<br />
+  <%= image_tag @picture.photo, :class => "img_show"%>
+  <% if @picture.image_name == "" %>
+   <h3>name:</h3>
+  <% else %>
+   <h3><%= @picture.image_name %></h3>
+  <% end %>
+
+  <% if @picture.image_description == "" %>
+   <p>description:</p>
+  <% else %>
+   <p><%= @picture.image_description %></p>
+  <% end %>
+
+<p><%= @picture.created_at.strftime("%b %d, %Y") %></p>
 <%= link_to 'Back', pictures_path, class: "info button" %>
 <%= link_to 'Edit', edit_picture_path(@picture), class: "warning button" %>
-<div class="divdiv">
-  <%= image_tag @picture.photo, :class => "img_show"%>
-<h3><%= @picture.image_name %></h3>
-<br />
-<p><%= @picture.image_description %></p>
-<br />
 <br />
 <br/>
 </div>

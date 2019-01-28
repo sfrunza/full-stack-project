@@ -138,7 +138,6 @@ class EmailForm extends Component {
              value={this.state.email}
              handleChange={this.handleChange}
              />
-
            </Col>
           </Row>
             <TextField
